@@ -33,14 +33,10 @@ module.exports = function (grunt) {
         cordova_plugins_map = {
             'battery-status':      'cordova-plugin-battery-status',
             'camera':              'cordova-plugin-camera',
-            'console':             'cordova-plugin-console',
             'contacts':            'cordova-plugin-contacts',
             'device':              'cordova-plugin-device',
-            'device-motion':       'cordova-plugin-device-motion',
-            'device-orientation':  'cordova-plugin-device-orientation',
             'dialogs':             'cordova-plugin-dialogs',
             'file':                'cordova-plugin-file',
-            'file-transfer':       'cordova-plugin-file-transfer',
             'geolocation':         'cordova-plugin-geolocation',
             'globalization':       'cordova-plugin-globalization',
             'inappbrowser':        'cordova-plugin-inappbrowser',
@@ -48,17 +44,17 @@ module.exports = function (grunt) {
             'media-capture':       'cordova-plugin-media-capture',
             'network-information': 'cordova-plugin-network-information',
             'splashscreen':        'cordova-plugin-splashscreen',
-            'vibration':           'cordova-plugin-vibration'
+            'statusbar':           'cordova-plugin-statusbar',
+            'vibration':           'cordova-plugin-vibration',
+            'whitelist':           'cordova-plugin-whitelist',
+            'wkwebview-engine':    'cordova-plugin-wkwebview-engine',
+            'test-framework':      'cordova-plugin-test-framework'
         },
         validPlatforms = [
             'ios',
             'android',
             'ubuntu',
-            'amazon-fireos',
-            'wp8',
-            'blackberry10',
-            'firefoxos',
-            'windows8',
+            'osx',
             'windows',
             'browser'];
     runCordova = function (args, opts, done) {
