@@ -216,7 +216,6 @@ module.exports = function (grunt) {
         });
         runCordovaSeries(tasks,done);
     };
-    grunt.runCordova = runCordova;
     grunt.registerMultiTask('cordovacli', '"Wraps a web application as a hybrid app with Cordova CLI"', function () {
     // Merge task-specific and/or target-specific options with these defaults.
         var options = this.options({
